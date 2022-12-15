@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+h1 {
+	font-family: fantasy; 
+	font-size: 3em; 
+	/*	This sets the size of the font but also mays it permanent.*/
+	border-bottom: 2px solid pink; 
+	/*	Adds a bottom line aka border that is pink and 2 px in width*/
+	border-right: 2px solid pink;
+	width: 400px;
+	/*Since we are in the h1 section this sets the width of element
+	and the border that was set on the bottom.*/
+	text-align: center;
+	/*This aligns exclusivly the h1 text within the set width of the 
+	element and not the page.*/
+
+}
+
+img {
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+}
+
