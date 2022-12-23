@@ -1,5 +1,6 @@
 body {
     margin: auto 0; /*removes white edging*/
+    font-family: Tahoma;
 }
 
 
@@ -22,10 +23,29 @@ body {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-box-shadow: rotate(-7deg);
+    -o-box-shadow: rotate(-7deg);
+    box-shadow: rotate(-7deg);
+}
+
+
 /*NAV*/
 
+nav {
+    list-style: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .main-nav {
-    display: flex;                  what is the problems here?
+    display: flex;      
     list-style: none;
     font-size: 0.7em;
     margin: 0;
@@ -51,6 +71,48 @@ li {
 a {
     color: #F5F5F6;
     text-decoration: none; /*removes underlining*/
+}
+
+/*COVER*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+
+.cover {
+    width: 20rem;
+}
+
+
+/*GRID*/
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+
+
+.box > img {
+    width: 100%;
+}
+
+
+
+.box {
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+
+
+footer {
+    text-align: center;
 }
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
